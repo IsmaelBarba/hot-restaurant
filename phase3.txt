@@ -3,6 +3,9 @@ Phase III - For this third phase, aim to complete the following
 
 Backend Team:
 
+app.get('/api/tables',...)
+app.get('/api/waitlist'...)
+app.post('/api/new'...)
 
 Create a set of variables (hint: arrays of objects) for holding the reservation and waitlist data
 
