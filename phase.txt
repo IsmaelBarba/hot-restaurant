@@ -1,0 +1,68 @@
+## Initial Instructions
+
+Today you will be building a Node / Express based web applications for handling reservation requests.
+
+Your application will be made up of two parts: 
+1) A front-end set of HTML/CSS/JS pages for entering and viewing data and 
+2) A back-end composed of Node/Express and basic JS for storing, updating, and relaying reservation data.
+
+Spend the time necessary to map this application out. Consider the concepts we've covered in class so far:
+
+* Servers
+* Routing
+* APIs
+* AJAX (GET and POST Requests)
+
+You should be referencing the code from the previous Star Wars application.
+
+Feel encouraged to use the following application as a reference: <http://hot-restaurant.herokuapp.com/>
+
+Note: We know this is a hard activity. We know you aren't yet comfortable with Node or Express. But push yourself. The best way to learn is to push through the discomfort and BUILD! Ask for help when you need it. We're here to help you through the process.
+
+---------------------
+
+
+## Phase I - For this first phase, aim to write out the pieces that will need to be programmed to create the functionality of your application. Try to break it into 6-7 pieces
+
+
+
+=============================================================================================================================
+* Create the front-end (visuals) for home page, reservation form, and reservation views.
+
+--HTML files using Bootstrap: 3 of them
+--> home and reserve are "static" HTML
+--> do they have dynamic data: 1 of them
+--* Use jQuery to run AJAX calls to GET and POST data from users to the Express server
+$AJAX calls will be used on the HTML files
+
+* Create a basic server using Express.JS
+- send HTML files when requested
+- send/receiving json data (API)  receing resevation data and sending all reservations that are done.
+How to send JSON? res.json({the objects or objects to send})
+
+How do we send a HTML file?  res.sendFile("our html file name here")
+
+-->  GET    Get is to get the data
+--> POST    Post is to send data
+________________________________________________________________
+$(".submit").on("click", function () {
+        // Here we grab the form elements
+        var newReservation = {
+            customerName: $('#reserve_name').val().trim(),
+            phoneNumber: $('#reserve_phone').val().trim(),
+            customerEmail: $('#reserve_email').val().trim(),
+            customerID: $('#reserve_uniqueID').val().trim()
+        };
+        console.log(newReservation);
+_________________________________________________________________
+
+
+* Create a set of routes for getting and posting table data
+* Create a set of routes for displaying the HTML pages
+=============================================================
+
+* Create a few array variables that will hold the data
+
+
+
+---------------------
